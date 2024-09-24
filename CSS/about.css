@@ -1,0 +1,50 @@
+/* styling to the about page  */
+
+.about-aboutus {
+    margin: 50px 50px 150px 50px;
+}
+
+.about-aboutus h1 {
+    color: rgb(255, 98, 0);
+}
+
+.about-aboutus p {
+    font-size: 16px;
+}
+
+.about-aboutus-content img {
+    width: 500px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px rgb(179, 179, 179);
+    margin-left: 20px;
+}
+
+.about-aboutus-content p {
+    width: 700px;
+    height: auto;
+}
+
+.about-aboutus-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* responsiveness of about section */
+
+@media (max-width:1024px) {
+    .about-aboutus-content img {
+        width: 400px;
+        height: 300px;
+        border-radius: 20px;
+        box-shadow: 1px 1px 10px rgb(179, 179, 179);
+        margin-left: 20px;
+    }
+}
+
+@media (max-width:924px) {
+    .about-aboutus-content img {
+        display: none;
+    }
+}

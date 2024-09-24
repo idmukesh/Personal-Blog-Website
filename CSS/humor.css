@@ -1,0 +1,55 @@
+/* styling the humor page only */
+
+.humor-memes-section {
+    margin: 50px;
+    max-width: 95%;
+}
+
+.humor-memes-section h1 {
+    color: rgb(255, 98, 0);
+}
+
+.humor-memes-section p {
+    font-size: 14px;
+    color: rgb(0, 68, 97);
+}
+
+.humor-memes-image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+}
+
+ .humor-memes-image-container img {
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+}
+
+/* responsiveness of humor page */
+
+@media (max-width:576px) {
+    .humor-memes-image-container img {
+        width: 300px;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .humor-memes-image-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+    }
+}
+
+@media (max-width:370px) {
+    .humor-memes-image-container .humor-memes-image-container img {
+        width: 100px;
+        height: 100px;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,95 @@
+/* blog posts are getting styled from here */
+
+.tutorials {
+    margin: 50px;
+}
+
+.tutorials h1 {
+    color: rgb(255, 98, 0);
+    text-align: center;
+}
+
+.tutorials p {
+    color: rgb(0, 68, 97);
+    text-align: center;
+    font-size: 14px;
+}
+
+.tutorial-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tutorial-content{
+    margin: 0 0 20px 0;
+}
+
+.tutorial-box li {
+    padding: 5px;
+}
+
+.tutorial-box a {
+    text-decoration: none;
+    background-color: rgb(0, 136, 127);
+    padding: 12px;
+    color: #fff;
+    transition: all 0.2s ease;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.tutorial-box a:hover {
+    background-color: rgb(0, 113, 106);
+    padding: 10px;
+}
+
+.tutorial-graphics {
+    display: flex;
+    gap: 20PX;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 40px 0;
+    width: 100%;
+}
+
+.graphic-img img {
+    width: 400px;
+    height: 250px;
+    box-shadow: 1px 1px 10px rgb(179, 179, 179);
+    border-radius: 20px;
+}
+
+.graphic-video iframe {
+    width: 400px;
+    height: 250px;
+    box-shadow: 1px 1px 10px rgb(179, 179, 179);
+    border-radius: 20px;
+}
+
+/* responsiveness of blog posts */
+
+@media (max-width:576px) {
+    .tutorial-graphics {
+        display: flex;
+        gap: 20PX;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 40px 0;
+        width: 100%;
+    }
+
+    .graphic-img img {
+        width: 300px;
+        height: 200px;
+        box-shadow: 1px 1px 10px rgb(179, 179, 179);
+        border-radius: 20px;
+    }
+
+    .graphic-video iframe {
+        width: 300px;
+        height: 200px;
+        box-shadow: 1px 1px 10px rgb(179, 179, 179);
+        border-radius: 20px;
+    }
+}

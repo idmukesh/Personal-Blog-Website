@@ -1,0 +1,53 @@
+/* meme section is styling  */
+
+.memes-section{
+    margin: 50px;
+    max-width: 95%;
+}
+
+.memes-section h1 {
+    color: rgb(255, 98, 0);
+}
+
+.memes-section p {
+    font-size: 14px;
+    color: rgb(0, 68, 97);
+}
+
+.memes-image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+}
+
+.memes-section .memes-image-container img {
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+}
+
+/* responsiveness og meme page */
+
+@media (max-width:576px) {
+    .memes-section .memes-image-container img {
+        width: 350px;
+        height:auto ;
+        padding: 10px;
+    }
+    .memes-image-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+    }
+}
+@media (max-width:370px) {
+    .memes-section .memes-image-container img {
+        width: 100px;
+        height:100px;
+        padding: 10px;
+    }
+}
